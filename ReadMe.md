@@ -4,12 +4,12 @@ the mapping of the categorical Y variables to their ‘real world’ names.
 Submission:
 A Python 3.7 module file challenge.py containing a class that will be
 called in the following way, and will predict the class of each spectra
-> from challenge import SpecPredict
->
-> model = SpecPredict(‘path/to/your/model’)
-> model.predict(testing_data)
-> # testing_data will be a [sample x feature] numpy array and should
-> # return a [sample x class] numpy array.
+from challenge import SpecPredict
+
+model = SpecPredict(‘path/to/your/model’)
+model.predict(testing_data)
+testing_data will be a [sample x feature] numpy array and will
+return a [sample x class] numpy array.
 
 In addition to the challenge.py module, The followings are included
 ● The script you used to train the model.
