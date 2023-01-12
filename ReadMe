@@ -1,0 +1,32 @@
+There is a Python 3.7 pickle file containing one Python object. The object will contain training
+data and labels for generating a chemometric classification model. In addition to the pickle file, there is a labels.txt file which will contain
+the mapping of the categorical Y variables to their ‘real world’ names.
+Submission:
+A Python 3.7 module file challenge.py containing a class that will be
+called in the following way, and will predict the class of each spectra
+> from challenge import SpecPredict
+>
+> model = SpecPredict(‘path/to/your/model’)
+> model.predict(testing_data)
+> # testing_data will be a [sample x feature] numpy array and should
+> # return a [sample x class] numpy array.
+Please write your code, comments, and documentation in a ‘ready-for-review’ style. That is, the point of
+this is not just that your code works, but that it is understandable and ready for addition to our production
+codebase. (We will not actually be adding your code to our codebase, of course.)
+In addition to the challenge.py module, please send us:
+● The script you used to train the model.
+● A model file.
+● An explanation of how to set up an environment to run your code(s).
+● Describe what plot(s) you would make in order to try to understand the form of the data you've
+been given. How would you integrate this information into your model building process?
+● A walkthrough of your model building process - please briefly describe different parts of the
+process such as feature selection, choosing a model architecture, etc.
+● An explanation of how you would profile your solution for speed optimizations and why they might
+be important.
+● An explanation of how you would estimate the model's performance on unseen data.
+● An explanation of what performance metric(s) you would use to evaluate the quality of
+classification of your solution.
+● Any other utility code you wrote.
+Your application should be easy to set up, and should run on Linux. It should not require any
+non-open-source software.
+Please send us an email if you have any questions. We look forward to seeing your solution!
